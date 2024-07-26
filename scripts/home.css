@@ -123,7 +123,7 @@ body {
     width: 35px;
 }
 
-/* HERO FOOTER */
+/* Hero Footer */
 
 .hero-footer {
     font-size: 14px;
@@ -147,13 +147,19 @@ body {
     gap: 30px
 }
 
-.hero-footer .foot svg {
-    fill: #FFFFFF;
+button {
+    background: none;
     background-color: #FF5722;
-    width: 20.94px;
+    height: 71px;
+    margin-top: 24.5px;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 30px
+    box-shadow: #676767;
+}
+
+.hero-footer .foot svg {
+    fill: #FFFFFF;
+    width: 20.94px;
 }
 
 .layout {
