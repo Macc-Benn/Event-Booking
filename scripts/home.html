@@ -21,13 +21,15 @@
   <body>
     <main>
       <!-- NAV-BAR -->
-      <div class="nav-bar">
-        <h4>Event</h4>
-        <div class="right-pane">
-          <p>Login</p>
-          <button>Create event</button>
+      <nav class="nav">
+        <div class="nav-bar">
+          <h4>Event</h4>
+          <div class="right-pane">
+            <p>Login</p>
+            <button>Create event</button>
+          </div>
         </div>
-      </div>
+      </nav>
 
       <!-- HERO SECTION -->
 
@@ -51,21 +53,25 @@
       <!-- Hero Footer -->
       <div class="hero-footer">
         <div class="foot">
-          <div>
+          <div class="what">
             <p>What are you looking?</p>
-            <input class="layout" type="text" placeholder="Search events" />
+            <div class="layout">
+              <input id="looking" type="text" placeholder="Search events" />
+            </div>
           </div>
-          <div>
+          <div class="loc">
             <p>Location</p>
-            <select class="layout" name="location" id="location">
-              <option value="0">Any location</option>
-              <option value="Lagos">Lagos, Nigeria</option>
-              <option value="Abuja">Abuja</option>
-              <option value="Washington">United States</option>
-              <option value="Georgia">Georgia, United States</option>
-            </select>
+            <div class="layout">
+              <select name="location" id="location">
+                <option value="0">Any location</option>
+                <option value="Lagos">Lagos, Nigeria</option>
+                <option value="Abuja">Abuja</option>
+                <option value="Washington">United States</option>
+                <option value="Georgia">Georgia, United States</option>
+              </select>
+            </div>
           </div>
-          <div>
+          <div class="when">
             <p>When?</p>
             <input
               class="layout"
@@ -91,16 +97,22 @@
       <!-- UPCOMING EVENTS -->
 
       <div class="upcoming-events">
-        <div class="upcoming-events-left">
-          <h2>Upcoming events</h2>
+        <div class="up-events">
+          <div class="upcoming-events-left">
+            <h2>Upcoming events</h2>
+          </div>
+          <div class="upcoming-events-right">
+            <select class="upcoming" name="category" id="category">
+              <option value="0">All Category</option>
+            </select>
+            <select class="upcoming" name="event-type" id="event-type">
+              <option value="0">Event Type</option>
+            </select>
+          </div>
         </div>
-        <div class="upcoming-events-right">
-          <select class="upcoming" name="category" id="category">
-            <option value="0">All Category</option>
-          </select>
-          <select class="upcoming" name="event-type" id="event-type">
-            <option value="0">Event Type</option>
-          </select>
+
+        <div class="events">
+          
         </div>
       </div>
     </main>
