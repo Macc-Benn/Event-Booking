@@ -4,7 +4,7 @@ body {
 }
 
 main {
-    margin: 0 auto 100px auto;
+    margin: 0 auto;
     max-width: 1440px;
 }
 
@@ -24,6 +24,7 @@ main {
     padding: 0 100px;
     display: flex;
     height: 90px;
+    box-shadow: 0 0 10px #cac4c4;
 }
 
 .nav-bar h4 {
@@ -50,7 +51,17 @@ main {
     color: #252D42;
 }
 
-.right-pane button {
+.right-pane .login-btn {
+    background: none;
+    border: none;
+}
+
+.right-pane .login-btn:hover {
+    cursor: pointer;
+    color: #676767;
+}
+
+.right-pane .create-btn {
     display: flex;
     padding: 16px 24px;
     gap: 10px;
@@ -64,7 +75,7 @@ main {
     background-color: #FF5722;
 }
 
-.right-pane button:hover {
+.right-pane .create-btn:hover {
     cursor: pointer;
     transform: scale(95%);
     transition: 0.3s;
@@ -196,6 +207,13 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: #676767;
+    border: none;
+}
+
+.foot button:hover {
+    cursor: pointer;
+    transform: scale(103%);
+    box-shadow: 0 0 10px #676767;
 }
 
 .hero-footer .foot svg {
@@ -210,11 +228,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 44px;
     margin: 100px auto 0 auto;
     padding-left: 100px;
     padding-right: 100px;
-    background-color: #676767;
 }
 
 /* Events Nav */
@@ -258,10 +276,12 @@ main {
 .events {
     margin-top: 50px;
     display: flex;
-    gap: 44px;
+    justify-content: space-around;
+    gap: 40px;
     flex-wrap: wrap;
     max-height: 1920px;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .event-card {
@@ -317,7 +337,6 @@ main {
 
 .txt-cont-right p {
     font-size: 14px;
-    font-family: Manrope;
     font-size: 14px;
     font-weight: 400;
     line-height: 19.12px;
@@ -357,4 +376,85 @@ main {
     transform: scale(95%);
     transition: 0.3s;
     box-shadow: 0 0 9px #FF5722;
+}
+
+/* FOOTER */
+
+footer {
+    background: #10375C;
+    margin-top: 81px;
+    padding: 81.8px 161px;
+}
+
+.footer-content {
+    flex-wrap: wrap;
+    height: 377.8px;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content .rights {
+    margin-top: 50px;
+}
+
+.footer-content .social-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.footer-content .social-links svg {
+    cursor: pointer;
+    pointer-events: all;
+}
+
+/* Right Footer */
+
+.footer-right {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    gap: 50px;
+}
+
+.footer-right .company,
+.support {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.company .info-links a,
+.support .support-links a {
+    text-decoration: none;
+    color: #D9DBE1;
+    line-height: 30px;
+}
+
+.company .info-links a:hover,
+.support .support-links a:hover {
+    text-decoration: underline;
+}
+
+.news-ltr {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.news-ltr input {
+    padding: 5px 30px;
+    opacity: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+.news-ltr ::placeholder {
+    font-size: 16px;
+    color: #D9DBE1;
+    opacity: 100 !important;
 }
