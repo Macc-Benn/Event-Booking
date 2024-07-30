@@ -385,7 +385,7 @@ main {
 footer {
     background: #10375C;
     margin-top: 81px;
-    padding: 81.8px 161px 0 81.8px;
+    padding: 81.8px 161px 0 161px;
 }
 
 .footer-content {
@@ -394,7 +394,7 @@ footer {
     display: flex;
     color: #FFFFFF;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 .footer-content .rights {
