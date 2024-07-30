@@ -81,21 +81,178 @@ main {
 
 .right-pane .create-btn:hover {
     cursor: pointer;
-    transform: scale(98%);
+    transform: scale(101%);
     transition: 0.3s;
-    box-shadow: 0 0 3px #FF5722;
+    /* box-shadow: 0 0 3px #FF5722; */
 }
 
 
 /* LOGIN FORM */
+.login-main {
+    width: 100%;
+    background: #F8F9FA;
+}
+
+.login {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-left {
+    padding-bottom: 40px;
+    padding-left: 100px;
+}
+
+.login-left-top h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 43.71px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #252D42;
+}
+
+.login-left-top p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    margin-top: 0;
+    color: #252D42;
+}
+
+.login-form {
+    margin-top: 80px;
+}
+
+.login-form fieldset {
+    border: 1px solid #252D424A;
+    border-radius: 4px;
+}
+
+.login-form fieldset input {
+    width: 100%;
+    border: none;
+    height: 30px;
+    background: #F8F9FA;
+    font-size: 16px;
+}
+
+.login-form fieldset input::placeholder {
+    opacity: 50%;
+}
+
+#fld-st2 {
+    margin-top: 20px;
+}
+
+form a {
+    color: #175CD3;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    background: #FF5722;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+form button:hover {
+    cursor: pointer;
+    transform: scale(101%);
+    transition: 0.1s;
+}
+
+.login-form #or {
+    text-align: center;
+}
+
+#p {
+    margin-left: auto;
+    margin-right: auto;
+    background: #F8F9FA;
+    width: 10%;
+}
+
+.hr {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+hr {
+    height: 0px;
+    width: 45%;
+    margin-top: -8%;
+    border: 1px solid #E5E5E5;
+    z-index: 0;
+    position: relative;
+}
+
+.other-optns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stl {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FF5722;
+    background: #F8F9FA;
+    border: 1px solid #FF5722;
+}
+
+.stl p {
+    margin-left: -28px;
+
+}
+
+.stl:hover {
+    cursor: pointer;
+    transform: scale(101%);
+    transition: 0.1s;
+}
 
 
+.create-acnt-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.create-acnt-btn a {
+    color: #FF5722;
+    text-decoration: none;
+}
+
+.login img {
+    width: 50%;
+}
 
 /* FOOTER */
 
 footer {
     background: #10375C;
-    margin-top: 81px;
+    margin-top: 0;
     padding: 81.8px 161px 0 161px;
 }
 
