@@ -33,7 +33,7 @@ main {
     line-height: 32.78px;
     color: #000000;
     text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .nav-bar .right-pane {
@@ -46,17 +46,14 @@ main {
     opacity: 0px;
 }
 
-.right-pane p {
+.right-pane .login-btn {
+    background: none;
+    border: none;
     font-size: 16px;
     font-weight: 500;
     line-height: 21.86px;
     text-align: left;
     color: #252D42;
-}
-
-.right-pane .login-btn {
-    background: none;
-    border: none;
 }
 
 .right-pane .login-btn:hover {
@@ -80,9 +77,9 @@ main {
 
 .right-pane .create-btn:hover {
     cursor: pointer;
-    transform: scale(95%);
+    transform: scale(98%);
     transition: 0.3s;
-    box-shadow: 0 0 9px #FF5722;
+    box-shadow: 0 0 3px #FF5722;
 }
 
 /* HERO SECTION */
@@ -179,7 +176,8 @@ main {
     flex-direction: column;
 }
 
-.layout {
+.layout,
+.layout1 #looking {
     width: 246px;
     height: 45px;
     background: #FFFFFF;
@@ -190,17 +188,14 @@ main {
     display: flex;
 }
 
-.layout #looking {
-    background: none;
-    border: none;
-}
-
 .layout #location {
     background: none;
     border: none;
     color: #676767;
     width: 250px;
+    cursor: pointer;
 }
+
 
 .foot button {
     background: none;
