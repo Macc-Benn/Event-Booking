@@ -114,6 +114,7 @@ main {
 }
 
 .login-left-top h2 {
+    width: 488px;
     font-size: 32px;
     font-weight: 800;
     line-height: 43.71px;
@@ -203,7 +204,7 @@ form button:hover {
 hr {
     height: 0px;
     width: 45%;
-    margin-top: -8%;
+    margin-top: -5.5%;
     border: 1px solid #E5E5E5;
     z-index: 0;
     position: relative;
