@@ -46,7 +46,7 @@ main {
     opacity: 0px;
 }
 
-.right-pane a {
+.right-pane #lg {
     background: none;
     border: none;
     font-size: 16px;
@@ -57,13 +57,12 @@ main {
     text-decoration: none;
 }
 
-.right-pane a:hover,
-.right-pane a:active,
-.right-pane a:visited {
+.right-pane #lg:hover,
+.right-pane #lg:active,
+.right-pane #lg:visited {
     cursor: pointer;
     opacity: 70%;
 }
-
 
 .right-pane .create-btn {
     display: flex;
@@ -81,9 +80,18 @@ main {
 
 .right-pane .create-btn:hover {
     cursor: pointer;
-    transform: scale(98%);
+    transform: scale(101%);
     transition: 0.3s;
-    box-shadow: 0 0 3px #FF5722;
+}
+
+#c-btn {
+    text-decoration: none;
+}
+
+.right-pane #c-btn:hover,
+.right-pane #c-btn:active,
+.right-pane #c-btn:visited {
+    cursor: pointer;
 }
 
 /* HERO SECTION */
@@ -284,6 +292,18 @@ main {
     max-height: 1920px;
     overflow-y: hidden;
     overflow-x: hidden;
+}
+
+.events a {
+    text-decoration: none;
+
+}
+
+.events a:hover,
+.events a:active,
+.events a:visited {
+    text-decoration: none;
+    color: #000000;
 }
 
 .event-card {
