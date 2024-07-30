@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="login.css" />
-    <link rel="html" href="index.html">
+    <link rel="html" href="index.html" />
   </head>
   <body>
     <main>
@@ -27,7 +27,6 @@
           <h4><a href="index.html" title="Events">Event</a></h4>
           <div class="right-pane">
             <a href="login.html"><p>Login</p></a>
-            </button>
             <button class="create-btn">Create event</button>
           </div>
         </div>
@@ -35,39 +34,93 @@
 
       <!-- LOGIN -->
 
-      <div class="login">
-        <div class="login-left">
+      <div class="login-main">
+        <div class="login">
+          <div class="login-left">
             <div class="login-left-top">
-                <h2>Login to your account</h2>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h2>Login to your account</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="login-form">
-                <form>
-                    <fieldset>
-                        <legend>Email</legend>
-                        <label><input id="email" type="email" name="email" placeholder="Enter valid email" ></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Password</legend>
-                        <label><input id="password" type="password" name="password" value="" placeholder="Enter password"></label>
-                    </fieldset>
-                    <p>Forget Password?</p>
-                </form>
-                <button><a href="#">Login</a></button>
-                <p>Or</p>
+              <form action="index.html">
+                <fieldset>
+                  <legend>Email</legend>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Enter valid email"
+                    required
+                  />
+                </fieldset>
+                <fieldset id="fld-st2">
+                  <!-- password field set -->
+                  <legend>Password</legend>
+                  <label
+                    ><input
+                      id="password"
+                      type="password"
+                      name="password"
+                      value=""
+                      placeholder="Enter password"
+                      required
+                  /></label>
+                </fieldset>
+                <p><a href="#">Forget Password?</a></p>
+                <button type="submit" title="Login">Login</button>
+              </form>
+              <div id="or">
+                <div id="p"><p>Or</p></div>
+                <div class="hr">
+                  <hr />
+                  <hr />
+                </div>
+              </div>
             </div>
             <div class="other-optns">
-                <div class="google-optn">
-                    <button>Google</button>
-                </div>
-                <div class="facebook-optn">
-                    <button>Facebook</button>
-                </div>
+              <div class="google-optn">
+                <button class="stl">
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.8281 12.3926C23.8281 19.3018 19.0967 24.2188 12.1094 24.2188C5.41016 24.2188 0 18.8086 0 12.1094C0 5.41016 5.41016 0 12.1094 0C15.3711 0 18.1152 1.19629 20.2295 3.16895L16.9336 6.33789C12.6221 2.17773 4.60449 5.30273 4.60449 12.1094C4.60449 16.333 7.97852 19.7559 12.1094 19.7559C16.9043 19.7559 18.7012 16.3184 18.9844 14.5361H12.1094V10.3711H23.6377C23.75 10.9912 23.8281 11.5869 23.8281 12.3926Z"
+                      fill="#FF5722"
+                    />
+                  </svg>
+                  <p>Google</p>
+                  <br />
+                </button>
+              </div>
+              <div class="facebook-optn">
+                <button class="stl">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.2188 12.1094C24.2188 5.41992 18.7988 0 12.1094 0C5.41992 0 0 5.41992 0 12.1094C0 18.1533 4.42822 23.1631 10.2173 24.0723V15.6099H7.14111V12.1094H10.2173V9.44141C10.2173 6.40674 12.0239 4.73047 14.791 4.73047C16.1162 4.73047 17.502 4.9668 17.502 4.9668V7.94531H15.9746C14.4707 7.94531 14.0015 8.87891 14.0015 9.83643V12.1094H17.3599L16.8228 15.6099H14.0015V24.0723C19.7905 23.1631 24.2188 18.1533 24.2188 12.1094Z"
+                      fill="#FF5722"
+                    />
+                  </svg>
+                  <p>Facebook</p>
+                  <br />
+                </button>
+              </div>
             </div>
-            <div class="create-acnt-btn">Not yet registered? <span class="create-link"><a href="#">Create account</a></span></div>
-        </div>
-        <div class="login-right">
-            <img src="images/image 1.png" />
+            <div class="create-acnt-btn">
+              Not yet registered?
+              <span class="create-link"><a href="#">Create account</a></span>
+            </div>
+          </div>
+          <img src="images/image 1.png" />
         </div>
       </div>
 
@@ -141,7 +194,6 @@
               </svg>
             </div>
           </div>
-
           <!-- Right content about the company, important links and newsletter sign up -->
           <div class="footer-right">
             <div class="company">
