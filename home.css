@@ -46,7 +46,7 @@ main {
     opacity: 0px;
 }
 
-.right-pane .login-btn {
+.right-pane a {
     background: none;
     border: none;
     font-size: 16px;
@@ -54,12 +54,16 @@ main {
     line-height: 21.86px;
     text-align: left;
     color: #252D42;
+    text-decoration: none;
 }
 
-.right-pane .login-btn:hover {
+.right-pane a:hover,
+.right-pane a:active,
+.right-pane a:visited {
     cursor: pointer;
     opacity: 70%;
 }
+
 
 .right-pane .create-btn {
     display: flex;
@@ -381,7 +385,7 @@ main {
 footer {
     background: #10375C;
     margin-top: 81px;
-    padding: 81.8px 161px;
+    padding: 81.8px 161px 0 81.8px;
 }
 
 .footer-content {
