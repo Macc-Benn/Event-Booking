@@ -123,23 +123,12 @@ main {
     color: #252D424A;
 }
 
-.contact-info {
-    display: flex;
-    width: 15.938rem;
-}
-
-.contact-info h3 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32.78px;
-    text-align: left;
-    color: #000000;
-}
-
 form {
+    margin-top: 5.5rem;
     display: flex;
     justify-content: space-between;
     gap: 5%;
+    align-items: center;
 }
 
 .form-details {
@@ -148,6 +137,15 @@ form {
     gap: 20px;
     width: 45%;
 }
+
+.form-details #ci {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.78px;
+    text-align: left;
+    color: #000000;
+}
+
 
 fieldset {
     width: 100%;
