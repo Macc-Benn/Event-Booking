@@ -112,7 +112,7 @@ main {
 
 .hero-left {
     margin-top: 56px;
-    padding-left: 100px;
+    padding-left: 6.25em;
 }
 
 .hero-left .go-back a {

@@ -95,181 +95,59 @@ main {
     cursor: pointer;
 }
 
+/* HERO SECTION */
 
-/* LOGIN FORM */
-.login-main {
-    width: 100%;
-    background: #F8F9FA;
+.hero {
+    background-image: url(images/event-hero.png);
+    background-size: cover;
+    height: 21.75rem;
 }
 
-.login {
+.hero-section {
+    width: 100%;
     display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.login-left {
-    padding-bottom: 2.5rem;
+.hero-left {
+    margin-top: 56px;
     padding-left: 6.25em;
 }
 
-.login-left-top h2 {
-    width: 30.5rem;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 43.71px;
+.hero-left .go-back a {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
     text-align: left;
-    margin-bottom: 0;
-    color: #252D42;
-}
-
-.login-left-top p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-    margin-top: 0;
-    color: #252D42;
-}
-
-.login-form {
-    margin-top: 80px;
-}
-
-.login-form fieldset {
-    border: 1px solid #252D424A;
-    border-radius: 4px;
-}
-
-.login-form fieldset input {
-    width: 100%;
-    border: none;
-    height: 30px;
-    background: #F8F9FA;
-    font-size: 16px;
-}
-
-.login-form fieldset input::placeholder {
-    opacity: 50%;
-}
-
-#fld-st2 {
-    margin-top: 20px;
-}
-
-form a {
-    color: #175CD3;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-form button {
-    width: 100%;
-    height: 48px;
-    border-radius: 4px;
-    background: #FF5722;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 27px;
-    text-align: center;
     color: #FFFFFF;
-}
-
-form button:hover {
-    cursor: pointer;
-    transform: scale(101%);
-    transition: 0.1s;
-}
-
-.login-form #or {
-    text-align: center;
-}
-
-#p {
-    margin-left: auto;
-    margin-right: auto;
-    background: #F8F9FA;
-    width: 10%;
-}
-
-.hr {
-    width: 100%;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 30px;
-}
-
-hr {
-    height: 0px;
-    width: 45%;
-    margin-top: -5.5%;
-    border: 1px solid #E5E5E5;
-    z-index: 0;
-    position: relative;
-}
-
-.other-optns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-}
-
-.stl {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 48px;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 27px;
-    color: #FF5722;
-    background: #F8F9FA;
-    border: 1px solid #FF5722;
-}
-
-.stl p {
-    margin-left: -28px;
-
-}
-
-.stl:hover {
-    cursor: pointer;
-    transform: scale(101%);
-    transition: 0.1s;
-}
-
-
-.create-acnt-btn {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.create-acnt-btn a {
-    color: #FF5722;
     text-decoration: none;
 }
 
-.login img {
-    width: 50%;
+.hero-left .go-back a:hover,
+.hero-left .go-back a:active,
+.hero-left .go-back a:visited {
+    cursor: pointer;
+}
+
+.hero-left h1 {
+    width: 100%;
+    font-size: 3.625rem;
+    font-weight: 400;
+    line-height: 81.2px;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
 }
 
 /* FOOTER */
 
 footer {
     background: #10375C;
-    margin-top: 0;
+    margin-top: 81px;
     padding: 81.8px 161px 0 161px;
 }
 
 .footer-content {
-    margin: 0 auto;
     flex-wrap: wrap;
-    height: 394px;
+    height: 377.8px;
     display: flex;
     color: #FFFFFF;
     justify-content: space-between;
@@ -337,4 +215,5 @@ footer {
 .news-ltr ::placeholder {
     font-size: 16px;
     color: #D9DBE1;
+    opacity: 100 !important;
 }
