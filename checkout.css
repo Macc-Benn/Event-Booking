@@ -432,6 +432,8 @@ input {
     color: #101828;
 }
 
+
+
 .payment button {
     margin-top: 32px;
     width: 100%;
@@ -557,6 +559,7 @@ footer {
     height: 40px;
     border: none;
     border-radius: 8px;
+    background-color: #FFFFFF;
 }
 
 .news-ltr ::placeholder {

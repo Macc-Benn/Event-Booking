@@ -44,7 +44,7 @@
         <div class="hero-section">
           <div class="hero-left">
             <div class="go-back">
-              <a href="create-account.html">
+              <a href="create-event.html">
                 <p>← Go Back</p>
               </a>
             </div>
@@ -60,7 +60,7 @@
           <h2>Checkout</h2>
           <p>Time left 5:11</p>
         </div>
-        <form class="fm">
+        <form class="fm" name="submission" onsubmit="clickBtn(event)">
           <div class="form-details">
             <h3 id="ci">Contact Information</h3>
             <fieldset>
@@ -68,19 +68,19 @@
               <input
                 type="text"
                 name="name"
-                title="Name"
+                title="name"
+                id="name"
                 placeholder="Enter your name"
-                required
               />
             </fieldset>
             <fieldset>
               <legend>Email</legend>
               <input
                 type="email"
+                id="email"
                 name="email"
-                title="Email"
+                title="email"
                 placeholder="Enter valid email"
-                required
               />
             </fieldset>
           </div>
@@ -107,56 +107,10 @@
                 <h3>Total</h3>
                 <h3>N5,000</h3>
               </div>
-              <button id="openPopupButton" type="button submit">
-                Buy Ticket
-              </button>
+              <button id="sub" type="submit">Buy Ticket</button>
             </div>
           </div>
         </form>
-      </section>
-
-      <!-- Modal Popup -->
-
-      <section class="modal-container hidden" id="popup">
-        <div class="pre-wrapper">
-          <p class="delete">
-            <span class="del-x" id="closePopupButton"
-              ><?xml version="1.0" encoding="UTF-8"?>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                id="Bold"
-                viewBox="0 0 24 24"
-                width="512"
-                height="512"
-              >
-                <path
-                  d="M14.121,12,18,8.117A1.5,1.5,0,0,0,15.883,6L12,9.879,8.11,5.988A1.5,1.5,0,1,0,5.988,8.11L9.879,12,6,15.882A1.5,1.5,0,1,0,8.118,18L12,14.121,15.878,18A1.5,1.5,0,0,0,18,15.878Z"
-                />
-              </svg>
-            </span>
-          </p>
-          <div class="modal-wrapper">
-            <header>
-              <h1>Payment Type</h1>
-              <p>Select from the options your preferred payment option.</p>
-            </header>
-            <form class="payment">
-              <label for="payment-type">Payment Type</label>
-              <select
-                name="payment-type"
-                id="payment-type"
-                aria-roledescription="select"
-              >
-                <option value="0">Select</option>
-                <option value="paystack">Paystack</option>
-                <option value="flutterwave">Flutterwave</option>
-                <option value="bank-transfer">Bank Transfer</option>
-                <option value="online-payment">Online Payment</option>
-              </select>
-              <button type="button submit">Pay</button>
-            </form>
-          </div>
-        </div>
       </section>
 
       <!-- FOOTER -->
@@ -256,6 +210,50 @@
           </div>
         </div>
       </footer>
+
+      <!-- Modal Popup -->
+
+      <section class="modal-container hidden" id="popup">
+        <div class="pre-wrapper">
+          <p class="delete">
+            <span class="del-x" id="closePopupButton"
+              ><?xml version="1.0" encoding="UTF-8"?>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Bold"
+                viewBox="0 0 24 24"
+                width="512"
+                height="512"
+              >
+                <path
+                  d="M14.121,12,18,8.117A1.5,1.5,0,0,0,15.883,6L12,9.879,8.11,5.988A1.5,1.5,0,1,0,5.988,8.11L9.879,12,6,15.882A1.5,1.5,0,1,0,8.118,18L12,14.121,15.878,18A1.5,1.5,0,0,0,18,15.878Z"
+                />
+              </svg>
+            </span>
+          </p>
+          <div class="modal-wrapper">
+            <header>
+              <h1>Payment Type</h1>
+              <p>Select from the options your preferred payment option.</p>
+            </header>
+            <form class="payment">
+              <label for="payment-type">Payment Type</label>
+              <select name="payment-type" id="payment-type">
+                <option value="" disabled selected>
+                  Select Prefered Payment Type
+                </option>
+                <option value="paystack">Paystack</option>
+                <option value="flutterwave">Flutterwave</option>
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="online-payment">Online Payment</option>
+              </select>
+              <button type="button submit" formaction="create-event.html">
+                Pay
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
