@@ -40,7 +40,7 @@ main {
 .nav-bar .right-pane {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 250px;
     height: 54px;
     gap: 56px;
@@ -52,17 +52,26 @@ main {
     border: none;
     font-size: 16px;
     font-weight: 500;
-    line-height: 21.86px;
     text-align: left;
     color: #252D42;
     text-decoration: none;
+}
+
+.right-pane p {
+    padding: 3px 5px;
+    border-radius: 4px;
 }
 
 .right-pane #lg:hover,
 .right-pane #lg:active,
 .right-pane #lg:visited {
     cursor: pointer;
+}
+
+.right-pane p:hover {
+    border: 1.5px solid #FF5722;
     opacity: 70%;
+    transition: 0.2s;
 }
 
 .right-pane .create-btn {
@@ -158,11 +167,17 @@ main {
     margin-bottom: 0;
 }
 
-.checkout-title p {
-    font-size: 16px;
-    font-weight: 400;
+#countdown {
+    font-size: 13px;
+    font-weight: 200;
     line-height: 21.86px;
     color: #252D424A;
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    background: #F2F4F7;
+    border: 1px solid #98A2B3;
+    border-radius: 4px;
 }
 
 .fm {
@@ -194,6 +209,11 @@ fieldset {
     background: #F2F4F7;
     border: 1px solid #252D424A;
     border-radius: 4px;
+}
+
+fieldset:hover {
+    border-color: #10375C;
+    box-shadow: 0 0 10px #FFFFFF;
 }
 
 legend {
@@ -286,7 +306,7 @@ input {
 
 .d-and-t p {
     text-align: start;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 30.05px;
     color: #000000;
@@ -432,8 +452,6 @@ input {
     color: #101828;
 }
 
-
-
 .payment button {
     margin-top: 32px;
     width: 100%;
@@ -491,12 +509,12 @@ input {
 footer {
     background: #10375C;
     margin-top: 81px;
-    padding: 81.8px 161px 0 161px;
+    height: 100%;
 }
 
 .footer-content {
     flex-wrap: wrap;
-    height: 377.8px;
+    padding: 81.8px 10rem 81.8px 6.25rem;
     display: flex;
     color: #FFFFFF;
     justify-content: space-between;
@@ -565,5 +583,5 @@ footer {
 .news-ltr ::placeholder {
     font-size: 16px;
     color: #D9DBE1;
-    opacity: 100 !important;
+    opacity: 100% !important;
 }

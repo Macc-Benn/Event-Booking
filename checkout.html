@@ -58,7 +58,12 @@
       <section class="checkout-main">
         <div class="checkout-title">
           <h2>Checkout</h2>
-          <p>Time left 5:11</p>
+          <div id="countdown">
+            <p><span id="days"></span> days:</p>
+            <p><span id="hours"></span> hrs:</p>
+            <p><span id="minutes"></span> mins:</p>
+            <p><span id="seconds"></span> secs Left</p>
+          </div>
         </div>
         <form class="fm" name="submission" onsubmit="clickBtn(event)">
           <div class="form-details">
@@ -71,6 +76,7 @@
                 title="name"
                 id="name"
                 placeholder="Enter your name"
+                required
               />
             </fieldset>
             <fieldset>
@@ -104,7 +110,7 @@
             </div>
             <div class="tk-de">
               <div id="tot">
-                <h3>Total</h3>
+                <h3>Total:</h3>
                 <h3>N5,000</h3>
               </div>
               <button id="sub" type="submit">Buy Ticket</button>
