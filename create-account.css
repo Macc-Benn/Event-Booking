@@ -96,27 +96,29 @@ main {
 }
 
 
-/* LOGIN FORM */
-.login-main {
+/* CREATE FORM */
+
+.create-main {
     width: 100%;
     background: #F8F9FA;
 }
 
-.login {
+.create {
     display: flex;
     width: 100%;
     gap: 5%;
     align-items: center;
     justify-content: space-between;
+
 }
 
-.login-left {
+.create-left {
     padding-bottom: 2.5rem;
     padding-left: 6.25em;
     width: 45%;
 }
 
-.login-left-top h2 {
+.create-left-top h2 {
     font-size: 32px;
     font-weight: 800;
     line-height: 43.71px;
@@ -125,7 +127,7 @@ main {
     color: #252D42;
 }
 
-.login-left-top p {
+.create-left-top p {
     font-size: 16px;
     font-weight: 400;
     line-height: 27px;
@@ -134,11 +136,11 @@ main {
     color: #252D42;
 }
 
-.login-form {
+.create-form {
     margin-top: 80px;
 }
 
-.login-form fieldset {
+.create-form fieldset {
     border: 1px solid #252D424A;
     border-radius: 4px;
 }
@@ -148,7 +150,7 @@ fieldset:hover {
     box-shadow: 0 0 10px #FFFFFF;
 }
 
-.login-form fieldset input {
+.create-form fieldset input {
     width: 100%;
     border: none;
     height: 30px;
@@ -156,11 +158,12 @@ fieldset:hover {
     font-size: 16px;
 }
 
-.login-form fieldset input::placeholder {
+.create-form fieldset input::placeholder {
     opacity: 50%;
 }
 
-#togglePassword {
+#togglePassword,
+#togglePassword1 {
     margin-left: -30px;
     cursor: pointer;
     z-index: 9999;
@@ -169,6 +172,12 @@ fieldset:hover {
 
 #fld-st2 {
     margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 form a {
@@ -200,69 +209,12 @@ form button:hover {
     text-align: center;
 }
 
-#p {
-    margin-left: auto;
-    margin-right: auto;
-    background: #F8F9FA;
-    width: 10%;
-}
-
-.hr {
-    width: 100%;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 30px;
-}
-
-hr {
-    height: 0px;
-    width: 45%;
-    margin-top: -5.5%;
-    border: 1px solid #E5E5E5;
-    z-index: 0;
-    position: relative;
-}
-
-.other-optns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-}
-
-.stl {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 48px;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 27px;
-    color: #FF5722;
-    background: #F8F9FA;
-    border: 1px solid #FF5722;
-}
-
-.stl p {
-    margin-left: -28px;
-
-}
-
-.stl:hover {
-    cursor: pointer;
-    transform: scale(101%);
-    transition: 0.1s;
-}
-
-
-.create-acnt-btn {
+.login-acnt-btn {
     text-align: center;
     margin-top: 40px;
 }
 
-.create-acnt-btn a {
+.login-acnt-btn a {
     color: #FF5722;
     text-decoration: none;
 }

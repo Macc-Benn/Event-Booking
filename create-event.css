@@ -100,7 +100,7 @@ main {
 .hero {
     background-image: url(images/event-hero.png);
     background-size: cover;
-    height: 21.75rem;
+    height: 348px;
 }
 
 .hero-section {

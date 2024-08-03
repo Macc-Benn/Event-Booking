@@ -62,34 +62,26 @@
         <div class="foot">
           <div class="what">
             <p>What are you looking?</p>
-            <div class="layout1">
               <input
                 id="looking"
                 type="text"
                 placeholder="Search events"
                 title="Search"
               />
-            </div>
           </div>
           <div class="loc">
             <p>Location</p>
-            <div class="layout">
               <select name="location" id="location">
-                <option value="0">Any location</option>
+                <option value="0" disabled selected>Any location</option>
                 <option value="Lagos">Lagos, Nigeria</option>
                 <option value="Abuja">Abuja</option>
                 <option value="Washington">United States</option>
                 <option value="Georgia">Georgia, United States</option>
               </select>
-            </div>
           </div>
           <div class="when">
             <p>When?</p>
-            <input
-              class="layout"
-              type="datetime-local"
-              placeholder="Select Date"
-            />
+            <input type="date" placeholder="Select Date" />
           </div>
           <button>
             <svg
