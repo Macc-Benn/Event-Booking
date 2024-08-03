@@ -7,13 +7,14 @@
            const name = document.forms['submission']['name'].value
             const email = document.forms['submission']['email'].value
 
-            if(name === "" || email === ""){
+            if(name === "" || email === "" ){ 
                 return alert("Please fill in all fields");
             }
-            
             document.getElementById('popup').classList.remove('hidden');
         }
         
+         
+   
 
         // Set the date we're counting down to
 var countDownDate = new Date("Aug 31, 2024 23:59:59").getTime();

@@ -107,7 +107,7 @@ main {
 /* HERO SECTION */
 
 .hero {
-    background-image: url(images/header-img.png);
+    background-image: url(../images/header-img.png);
     background-size: cover;
     height: 628px;
     display: flex;
@@ -217,7 +217,7 @@ main {
     border: 2px solid;
     gap: 18.75rem;
     cursor: pointer;
-    background-image: url("images/arrow\ down.svg");
+    background-image: url("../images/arrow\ down.svg");
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: calc(100% - 8px) center;
@@ -321,11 +321,7 @@ main {
     position: relative;
 }
 
-.events a {
-    text-decoration: none;
-
-}
-
+.events a,
 .events a:hover,
 .events a:active,
 .events a:visited {

@@ -25,6 +25,7 @@ togglePassword1.addEventListener('click', function () {
 });
 
 form.addEventListener('submit', function (e) {
+  console.log(password.value)
   if (password.value !== password1.value) {
     e.preventDefault(); // Prevent form submission
     errorMessage.textContent = 'Passwords do not match!';
