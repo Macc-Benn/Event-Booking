@@ -47,7 +47,10 @@ main {
     opacity: 0px;
 }
 
-.right-pane #lg {
+.right-pane #lg,
+.right-pane #lg:hover,
+.right-pane #lg:active,
+.right-pane #lg:visited {
     background: none;
     border: none;
     font-size: 16px;
@@ -58,11 +61,17 @@ main {
     text-decoration: none;
 }
 
-.right-pane #lg:hover,
-.right-pane #lg:active,
-.right-pane #lg:visited {
+.right-pane p {
+    padding: 3px 5px;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
+}
+
+.right-pane p:hover {
     cursor: pointer;
+    border-color: #FF5722;
     opacity: 70%;
+    transition: 0.1s;
 }
 
 .right-pane .create-btn {
@@ -165,56 +174,70 @@ main {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .foot {
-    padding: 0 50px;
+    padding: 40px 50px;
+    margin-left: auto;
+    margin-right: auto;
     background: #10375C;
-    height: 167px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 28px #33333340;
+    flex-wrap: wrap;
 
 }
 
-.what,
-.loc,
-.when {
-    display: flex;
-    flex-direction: column;
+.what p,
+.when p,
+.loc p {
+    margin-top: 0;
 }
 
-.layout,
-.layout1 #looking {
-    width: 246px;
+.foot input {
+    width: 13.875rem;
     height: 45px;
     background: #FFFFFF;
     border-radius: 10px;
-    border: none;
+    border: 2px solid;
     color: #676767;
     padding: 0 20px;
-    display: flex;
 }
 
-.layout #location {
-    background: none;
-    border: none;
+.loc select {
+    width: 16.875rem;
     color: #676767;
-    width: 250px;
+    height: 48px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid;
+    gap: 18.75rem;
     cursor: pointer;
+    background-image: url("images/arrow\ down.svg");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
 }
 
+.foot input:hover,
+.foot select:hover {
+    border-color: #FF5722;
+}
 
 .foot button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: none;
     background-color: #FF5722;
-    height: 71px;
-    margin-top: 24.5px;
+    height: 50px;
+    margin-top: 30px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: #676767;
@@ -223,8 +246,9 @@ main {
 
 .foot button:hover {
     cursor: pointer;
-    transform: scale(103%);
-    box-shadow: 0 0 10px #676767;
+    transform: scale(101%);
+    transition: 0.1s;
+    box-shadow: 0 0 5px #676767;
 }
 
 .hero-footer .foot svg {
@@ -236,12 +260,7 @@ main {
 /* UPCOMING EVENTS */
 
 .upcoming-events {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 44px;
-    margin: 100px auto 0 auto;
+    margin: 100px auto 100px auto;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -254,6 +273,7 @@ main {
     justify-content: space-between;
     width: 100%;
     height: 55px;
+    flex-wrap: wrap;
 }
 
 .up-events h2 {
@@ -274,7 +294,7 @@ main {
     padding: 10px 16px;
     width: 138px;
     height: 39px;
-    border: none;
+    border: 1px solid #FF57221A;
     border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
@@ -282,10 +302,15 @@ main {
     text-align: left;
 }
 
+.upcoming-events .upcoming-events-right .upcoming:hover {
+    cursor: pointer;
+    border-color: #000000;
+}
+
 /* Events Card */
 
 .events {
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     gap: 40px;
@@ -293,6 +318,7 @@ main {
     max-height: 1920px;
     overflow-y: hidden;
     overflow-x: hidden;
+    position: relative;
 }
 
 .events a {
@@ -377,7 +403,7 @@ main {
 }
 
 .upcoming-events button {
-    margin-top: 80px;
+    margin: 80px auto 0 auto;
     height: 54px;
     width: 183px;
     display: flex;
@@ -395,9 +421,9 @@ main {
 
 .upcoming-events button:hover {
     cursor: pointer;
-    transform: scale(95%);
-    transition: 0.3s;
-    box-shadow: 0 0 9px #FF5722;
+    transform: scale(101%);
+    transition: 0.2s;
+    box-shadow: 0 0 3px #FF5722;
 }
 
 /* FOOTER */

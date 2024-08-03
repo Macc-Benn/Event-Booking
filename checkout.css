@@ -47,11 +47,15 @@ main {
     opacity: 0px;
 }
 
-.right-pane #lg {
+.right-pane #lg,
+.right-pane #lg:hover,
+.right-pane #lg:active,
+.right-pane #lg:visited {
     background: none;
     border: none;
     font-size: 16px;
     font-weight: 500;
+    line-height: 21.86px;
     text-align: left;
     color: #252D42;
     text-decoration: none;
@@ -60,16 +64,11 @@ main {
 .right-pane p {
     padding: 3px 5px;
     border-radius: 4px;
-}
-
-.right-pane #lg:hover,
-.right-pane #lg:active,
-.right-pane #lg:visited {
-    cursor: pointer;
+    border: 1px solid #FFFFFF;
 }
 
 .right-pane p:hover {
-    border: 1.5px solid #FF5722;
+    border-color: #FF5722;
     opacity: 70%;
     transition: 0.2s;
 }
@@ -345,6 +344,8 @@ input {
     transform: scale(102%);
     transition: 0.1s;
 }
+
+/*MODAL  */
 
 .modal-container {
     background: rgba(0, 0, 0, 0.5);
