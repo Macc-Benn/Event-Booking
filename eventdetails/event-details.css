@@ -47,10 +47,7 @@ main {
     opacity: 0px;
 }
 
-.right-pane #lg,
-.right-pane #lg:hover,
-.right-pane #lg:active,
-.right-pane #lg:visited {
+.right-pane #lg {
     background: none;
     border: none;
     font-size: 16px;
@@ -61,17 +58,11 @@ main {
     text-decoration: none;
 }
 
-.right-pane p {
-    padding: 3px 5px;
-    border-radius: 4px;
-    border: 1px solid #FFFFFF;
-}
-
-.right-pane p:hover {
+.right-pane #lg:hover,
+.right-pane #lg:active,
+.right-pane #lg:visited {
     cursor: pointer;
-    border-color: #FF5722;
     opacity: 70%;
-    transition: 0.1s;
 }
 
 .right-pane .create-btn {
@@ -107,34 +98,46 @@ main {
 /* HERO SECTION */
 
 .hero {
-    background-image: url(images/header-img.png);
+    background-image: url(../images/header-img.png);
     background-size: cover;
     height: 628px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero-section {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 258px;
-    width: 835px;
-    height: 221px;
-    gap: 20px;
-    margin-top: -70px;
+    justify-content: space-between;
 }
 
-.hero-section h1 {
-    margin-top: 0;
-    font-family: Inter;
+.hero-left {
+    margin-top: 56px;
+    padding-left: 6.25em;
+    width: 40%;
+}
+
+.hero-left .go-back a {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: left;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hero-left .go-back a:hover,
+.hero-left .go-back a:active,
+.hero-left .go-back a:visited {
+    cursor: pointer;
+}
+
+.hero-left h1 {
+    margin-top: 128px;
     font-size: 58px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 81.2px;
     letter-spacing: -0.5px;
-    text-align: center;
+    text-align: start;
     color: #FFFFFF;
     margin-bottom: 0
 }
@@ -142,175 +145,211 @@ main {
 .hero-sub-text {
     cursor: pointer;
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
     height: 27px;
     gap: 10px;
     opacity: 0px;
-    color: #FF5722;
+    color: #FFFFFF;
 }
 
 .hero-sub-text p {
-    font-size: 20px;
+    /* width: 558px; */
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.78px;
+    text-align: left;
+}
+
+.hero-right {
+    padding-right: 9rem;
+}
+
+.hero-right-sub {
+    width: 90%;
+    margin-top: 200px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 10px;
+}
+
+.hero-right-sub #d-txt {
+    font-size: 24px;
     font-weight: 700;
-    line-height: 27.32px;
+    line-height: 32.78px;
+    text-align: left;
+    color: #252D42;
+    margin: 0;
+}
+
+.hero-right-sub #dte {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21.86px;
+    text-align: left;
+    color: #252D42;
+    margin-bottom: 5px;
+}
+
+.hero-right-sub #cal {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.86px;
+    text-align: left;
+    color: #FF5722;
+}
+
+.hero-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 40px
+}
+
+.hero-btns button {
+    width: 100%;
+    height: 54px;
+    padding: 16px 24px;
+    border-radius: 4px;
+    opacity: 0px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.hero-btns #b-tkt,
+#s-tkt {
+    background: #FF5722;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.86px;
     text-align: center;
 }
 
-.hero-sub-text svg {
-    fill: #FF5722;
-    width: 35px;
+#s-tkt {
+    background: #D9D1CE;
 }
 
-/* Hero Footer */
-
-.hero-footer {
-    font-size: 14px;
-    color: #FFFFFF;
-    width: 100%;
-    margin-top: -90px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.foot {
-    padding: 40px 50px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #10375C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 28px #33333340;
-    flex-wrap: wrap;
-
-}
-
-.what p,
-.when p,
-.loc p {
-    margin-top: 0;
-}
-
-.foot input {
-    width: 13.875rem;
-    height: 45px;
-    background: #FFFFFF;
-    border-radius: 10px;
-    border: 2px solid;
-    color: #676767;
-    padding: 0 20px;
-}
-
-.loc select {
-    width: 16.875rem;
-    color: #676767;
-    height: 48px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid;
-    gap: 18.75rem;
-    cursor: pointer;
-    background-image: url("images/arrow\ down.svg");
-    background-size: 24px;
-    background-repeat: no-repeat;
-    background-position: calc(100% - 8px) center;
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-}
-
-.foot input:hover,
-.foot select:hover {
-    border-color: #FF5722;
-}
-
-.foot button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    background-color: #FF5722;
-    height: 50px;
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: #676767;
-    border: none;
-}
-
-.foot button:hover {
-    cursor: pointer;
+.hero-btns button:hover {
     transform: scale(101%);
-    transition: 0.1s;
-    box-shadow: 0 0 5px #676767;
+    transition: 0.2s;
+    box-shadow: 0 0 5px #cac4c4;
+    cursor: pointer;
 }
 
-.hero-footer .foot svg {
-    fill: #FFFFFF;
-    width: 20.94px;
-}
+/* EVENT DESCRIPTION */
 
-
-/* UPCOMING EVENTS */
-
-.upcoming-events {
-    margin: 100px auto 100px auto;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-/* Events Nav */
-
-.up-events {
+.description {
+    padding: 0 100px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 55px;
-    flex-wrap: wrap;
+    gap: 43px;
+    margin-top: 100px;
 }
 
-.up-events h2 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 54.64px;
+.description h3 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 43.71px;
     text-align: left;
     color: #252D42;
 }
 
-.upcoming-events-right {
+.des-main p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #252D42;
+    margin-top: 30px;
+}
+
+.d-and-t {
     display: flex;
+    flex-direction: column;
+}
+
+.d-and-t h3 {
+    margin-bottom: 0;
+}
+
+.date-spec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-spec h4 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 37px;
+    text-align: left;
+    color: #252D42;
+}
+
+.date-spec p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.how-to {
+    display: flex;
+    flex-direction: column;
+}
+
+.how-to h3 {
+    margin-bottom: 10px;
+}
+
+.how-to p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21.86px;
+    text-align: left;
+    color: #252D42;
+}
+
+.how-to a {
+    text-decoration: none;
+    color: #FF5722;
+}
+
+.des-rght .share {
+    margin-top: 100px;
+}
+
+
+.share-icns {
+    display: flex;
+    align-items: center;
     gap: 15px;
 }
 
-.upcoming-events .upcoming-events-right .upcoming {
-    background: #FF57221A;
-    padding: 10px 16px;
-    width: 138px;
-    height: 39px;
-    border: 1px solid #FF57221A;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: lighter;
-    line-height: 19.12px;
-    text-align: left;
+.share-icns svg {
+    background: #FF5722;
+    border-radius: 100px;
+    padding: 6px;
 }
 
-.upcoming-events .upcoming-events-right .upcoming:hover {
+.share-icns svg:hover {
     cursor: pointer;
-    border-color: #000000;
 }
 
-/* Events Card */
+.other-events h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54.64px;
+    text-align: left;
+    margin-left: 100px;
+    color: #252D42;
+}
+
+/* EVENTS SAMPLES */
 
 .events {
-    margin-top: 100px;
+    padding: 0 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     gap: 40px;
@@ -318,12 +357,10 @@ main {
     max-height: 1920px;
     overflow-y: hidden;
     overflow-x: hidden;
-    position: relative;
 }
 
 .events a {
     text-decoration: none;
-
 }
 
 .events a:hover,
@@ -386,6 +423,7 @@ main {
 
 .txt-cont-right p {
     font-size: 14px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 19.12px;
     text-align: left;
@@ -400,30 +438,6 @@ main {
 .event-card::after {
     transform: scale(-100%);
     transition: 0.5s;
-}
-
-.upcoming-events button {
-    margin: 80px auto 0 auto;
-    height: 54px;
-    width: 183px;
-    display: flex;
-    padding: 16px 24px;
-    gap: 10px;
-    border-radius: 4px;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 21.86px;
-    text-align: left;
-    color: #FFFFFF;
-    background-color: #FF5722;
-}
-
-.upcoming-events button:hover {
-    cursor: pointer;
-    transform: scale(101%);
-    transition: 0.2s;
-    box-shadow: 0 0 3px #FF5722;
 }
 
 /* FOOTER */

@@ -106,7 +106,7 @@ main {
 /* HERO SECTION */
 
 .hero {
-    background-image: url(images/event-hero.png);
+    background-image: url(../images/event-hero.png);
     background-size: cover;
     height: 21.75rem;
 }
@@ -431,7 +431,7 @@ input {
     border: 1px solid #D0D5DD;
     border-radius: 6px;
     opacity: 0px;
-    background-image: url("images/arrow\ down.svg");
+    background-image: url("../images/arrow\ down.svg");
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: calc(100% - 8px) center;
@@ -486,19 +486,19 @@ input {
 }
 
 .del-x {
-    padding: 5px;
+    padding: 4px 5px 0 5px;
     position: relative;
-    background: #FF5722;
     color: #FFFFFF;
-    border-radius: 5px;
+    border-radius: 100px;
 }
 
 .del-x svg {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
 }
 
 .delete .del-x:hover {
+    background-color: #D0D5DD;
     cursor: pointer;
     transform: scale(99%);
     opacity: 90%;
