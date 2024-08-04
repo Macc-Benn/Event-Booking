@@ -106,7 +106,7 @@ main {
 /* HERO SECTION */
 
 .hero {
-    background-image: url(images/event-hero.png);
+    background-image: url(../images/event-hero.png);
     background-size: cover;
     height: 21.75rem;
 }
@@ -431,7 +431,7 @@ input {
     border: 1px solid #D0D5DD;
     border-radius: 6px;
     opacity: 0px;
-    background-image: url("images/arrow\ down.svg");
+    background-image: url("../images/arrow\ down.svg");
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: calc(100% - 8px) center;

@@ -98,7 +98,7 @@ main {
 /* HERO SECTION */
 
 .hero {
-    background-image: url(images/event-hero.png);
+    background-image: url(../images/event-hero.png);
     background-size: cover;
     height: 348px;
 }

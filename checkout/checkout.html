@@ -16,21 +16,21 @@
       href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="html" href="login.html" />
+    <link rel="html" href="../login/login.html" />
     <link rel="stylesheet" href="checkout.css" />
-    <link rel="html" href="event-details.html" />
-    <link rel="html" href="index.html" />
+    <link rel="html" href="../eventdetails/event-details.html" />
+    <link rel="html" href="../home/index.html" />
   </head>
   <body>
     <main>
       <!-- NAV-BAR -->
       <nav class="nav">
         <div class="nav-bar">
-          <h4><a href="index.html" title="Events">Event</a></h4>
+          <h4><a href="../home/index.html" title="Events">Event</a></h4>
           <div class="right-pane">
-            <a id="lg" href="login.html"><p>Login</p></a>
-            <a id="c-btn" href="login.html">
-              <button type="submit" class="create-btn" title="Create Event">
+            <a id="lg" href="../login/login.html"><p>Login</p></a>
+            <a id="c-btn" href="../login/login.html">
+              <button type="button" class="create-btn" title="Create Event">
                 Create event
               </button>
             </a>
@@ -44,7 +44,7 @@
         <div class="hero-section">
           <div class="hero-left">
             <div class="go-back">
-              <a href="create-event.html">
+              <a href="../createevent/create-event.html">
                 <p>← Go Back</p>
               </a>
             </div>
@@ -252,7 +252,10 @@
                 <option value="bank-transfer">Bank Transfer</option>
                 <option value="online-payment">Online Payment</option>
               </select>
-              <button type="button submit" formaction="create-event.html">
+              <button
+                type="button submit"
+                formaction="../createevent/create-event.html"
+              >
                 Pay
               </button>
             </form>

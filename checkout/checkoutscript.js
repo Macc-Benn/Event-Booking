@@ -10,6 +10,7 @@
             if(name === "" || email === "" ){ 
                 return alert("Please fill in all fields");
             }
+            
             document.getElementById('popup').classList.remove('hidden');
         }
         
