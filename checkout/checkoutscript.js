@@ -2,22 +2,60 @@
     document.getElementById('popup').classList.add('hidden');
 });
         
-        const clickBtn = (event) => {
-            event.preventDefault(); // Prevent form submission on button click
-           const name = document.forms['submission']['name'].value
-            const email = document.forms['submission']['email'].value
+const clickBtn = (event) => {
+    event.preventDefault(); // Prevent form submission on button click
+    const name = document.forms['submission']['name'].value
+    const email = document.forms['submission']['email'].value
 
-            if(name === "" || email === "" ){ 
-                return alert("Please fill in all fields");
-            }
-            
-            document.getElementById('popup').classList.remove('hidden');
-        }
-        
-         
-   
+    if(name === "" || email === "" ){ 
+        return alert("Please fill in all fields");
+    }
+    
+    document.getElementById('popup').classList.remove('hidden');
+}
 
-        // Set the date we're counting down to
+document.getElementById('payment-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  var paymentType = document.getElementById('payment-type').value;
+  
+  if (paymentType === '') {
+    alert('Please select a payment type.');
+  } else {
+    var paymentUrl = '';
+    
+    switch (paymentType) {
+      case 'paystack':
+        paymentUrl = './payments/paystack/paystack.html';
+        break;
+      case 'flutterwave':
+        paymentUrl = './payments/flutterwave/flutterwave.html';
+        break;
+      case 'bank-transfer':
+        paymentUrl = './payments/bank-transfer/bank-transfer.html';
+        break;
+      case 'online-payment':
+        paymentUrl = './payments/online/online-payment.html';
+        break;
+    }
+
+    // Store the return URL with a query parameter indicating successful payment
+    window.location.href = paymentUrl + '?returnUrl=' + encodeURIComponent(window.location.href + '?paymentSuccess=true');
+  }
+});
+
+// Check for payment success message in URL
+window.onload = function() {
+  var urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('paymentSuccess') === 'true') {
+    alert('Payment Successful');
+    window.location.href = '../eventdetails/event-details.html'; // Redirect to home page
+  }
+};
+
+
+
+// Set the date we're counting down to
 var countDownDate = new Date("Aug 31, 2024 23:59:59").getTime();
 
 // Update the count down every 1 second

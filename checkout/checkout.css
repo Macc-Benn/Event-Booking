@@ -486,24 +486,22 @@ input {
 }
 
 .del-x {
-    padding: 4px 5px 0 5px;
-    position: relative;
-    color: #FFFFFF;
-    border-radius: 100px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.del-x svg {
-    width: 15px;
-    height: 15px;
-}
 
-.delete .del-x:hover {
-    background-color: #D0D5DD;
+.del-x:hover,
+.del-x:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
-    transform: scale(99%);
-    opacity: 90%;
     transition: 0.1s;
 }
+
+
 
 /* FOOTER */
 

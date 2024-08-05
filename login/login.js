@@ -21,4 +21,4 @@ function validateForm() {
   alert("Logged in");
   
   return true; // Allow form submission
-}       
+}  
