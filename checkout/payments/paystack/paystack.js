@@ -6,5 +6,7 @@
     // Simulate payment success
     setTimeout(function () {
     window.location.href = returnUrl;
-    }, 1000); // Simulating a delay for payment processing
+    }, 1000);
+    
+    alert('Payment Successful'); // Simulating a delay for payment processing
 });
