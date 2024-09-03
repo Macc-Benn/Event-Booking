@@ -26,7 +26,7 @@
       <nav class="nav">
         <div class="nav-bar">
           <h4><a href="index.html" title="Events">Event</a></h4>
-          <div class="right-pane">
+          <div class="right-pane menu-pane">
             <a id="lg" href="./login/login.html"><p>Login</p></a>
             <a id="c-btn" href="./login/login.html">
               <button type="button" class="create-btn" title="Create Event">
@@ -34,6 +34,13 @@
               </button>
             </a>
           </div>
+          <buttton id="nav-btn" class="openbtn" onclick="openNav()">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.45833 9.04166H24.5417" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.45833 15.5H24.5417" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.45833 21.9583H24.5417" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
+          </buttton>
         </div>
       </nav>
 
@@ -44,14 +51,8 @@
           <h1>Connect to all the event hapenning around you</h1>
           <div class="hero-sub-text">
             <p>Explore More</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 50 50"
-              id="arrow"
-            >
-              <path
-                d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
-              ></path>
+            <svg width="37" height="24" viewBox="0 0 37 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M36.5607 13.0607C37.1464 12.4749 37.1464 11.5251 36.5607 10.9393L27.0147 1.3934C26.4289 0.807609 25.4792 0.807609 24.8934 1.3934C24.3076 1.97918 24.3076 2.92893 24.8934 3.51472L33.3787 12L24.8934 20.4853C24.3076 21.0711 24.3076 22.0208 24.8934 22.6066C25.4792 23.1924 26.4289 23.1924 27.0147 22.6066L36.5607 13.0607ZM0.5 13.5L35.5 13.5L35.5 10.5L0.5 10.5L0.5 13.5Z" fill="#FF5722"/>
             </svg>
           </div>
         </div>
@@ -63,6 +64,7 @@
             <p>What are you looking?</p>
             <input
               id="looking"
+              class="looking"
               type="text"
               placeholder="Search events"
               title="Search"
@@ -83,24 +85,15 @@
             <input type="date" placeholder="Select Date" />
           </div>
           <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 50 50"
-              id="arrow"
-            >
-              <path
-                d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
-                stroke-width="100"
-              ></path>
-            </svg>
+            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.55859 12.6211H20.0435L14.3858 19.4996C14.2548 19.6591 14.1562 19.8432 14.0954 20.0413C14.0347 20.2394 14.0132 20.4477 14.032 20.6543C14.07 21.0715 14.2701 21.4563 14.5884 21.7241C14.9067 21.9918 15.3171 22.1207 15.7292 22.0822C16.1413 22.0437 16.5215 21.8411 16.7861 21.519L24.579 12.0531C24.6315 11.9779 24.6783 11.8988 24.7193 11.8165C24.7193 11.7376 24.7972 11.6903 24.8284 11.6114C24.899 11.4305 24.936 11.238 24.9375 11.0435C24.936 10.849 24.899 10.6564 24.8284 10.4755C24.8284 10.3966 24.7505 10.3493 24.7193 10.2704C24.6783 10.1882 24.6315 10.1091 24.579 10.0338L16.7861 0.567952C16.6395 0.389864 16.456 0.246646 16.2486 0.148484C16.0412 0.050322 15.8149 -0.000373382 15.5859 3.01385e-06C15.2218 -0.000717198 14.8688 0.127664 14.5884 0.362859C14.4306 0.495301 14.3002 0.657956 14.2045 0.841509C14.1089 1.02506 14.05 1.22591 14.0312 1.43254C14.0124 1.63918 14.034 1.84754 14.0949 2.04569C14.1557 2.24385 14.2546 2.42791 14.3858 2.58733L20.0435 9.46582H1.55859C1.14523 9.46582 0.748795 9.63204 0.456502 9.9279C0.164209 10.2238 0 10.625 0 11.0435C0 11.4619 0.164209 11.8632 0.456502 12.159C0.748795 12.4549 1.14523 12.6211 1.55859 12.6211Z" fill="white"/>
+              </svg>
           </button>
         </div>
       </div>
 
       <!-- UPCOMING EVENTS -->
-
-      <div class="upcoming-events">
-        <!-- Events Navigaiton -->
+      <div class="ev">
         <div class="up-events">
           <div class="upcoming-events-left">
             <h2>Upcoming events</h2>
@@ -116,223 +109,225 @@
         </div>
 
         <!-- Events Main -->
-        <div class="events">
-          <a href="./eventdetails/event-details.html">
-            <div class="event-card">
-              <div class="img-cont">
-                <img
-                  src="./images/event.png"
-                  alt="photo of an entertainer on stage, performing to an audience"
-                />
-              </div>
-              <div class="txt-cont">
-                <div class="txt-cont-left">
-                  <p class="mnth">Oct</p>
-                  <p class="dte">28</p>
-                </div>
-                <div class="txt-cont-right">
-                  <h3>Event Name which can be long</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                    vivamus penatibus viverra aliquam diam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="./eventdetails/event-details.html">
-            <div class="event-card">
-              <div class="img-cont">
-                <img
-                  src="./images/event.png"
-                  alt="photo of an entertainer on stage, performing to an audience"
-                />
-              </div>
-              <div class="txt-cont">
-                <div class="txt-cont-left">
-                  <p class="mnth">Oct</p>
-                  <p class="dte">28</p>
-                </div>
-                <div class="txt-cont-right">
-                  <h3>Event Name which can be long</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                    vivamus penatibus viverra aliquam diam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="./eventdetails/event-details.html">
-            <div class="event-card">
-              <div class="img-cont">
-                <img
-                  src="./images/event.png"
-                  alt="photo of an entertainer on stage, performing to an audience"
-                />
-              </div>
-              <div class="txt-cont">
-                <div class="txt-cont-left">
-                  <p class="mnth">Oct</p>
-                  <p class="dte">28</p>
-                </div>
-                <div class="txt-cont-right">
-                  <h3>Event Name which can be long</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                    vivamus penatibus viverra aliquam diam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="./eventdetails/event-details.html">
-            <div class="event-card">
-              <div class="img-cont">
-                <img
-                  src="./images/event.png"
-                  alt="photo of an entertainer on stage, performing to an audience"
-                />
-              </div>
-              <div class="txt-cont">
-                <div class="txt-cont-left">
-                  <p class="mnth">Oct</p>
-                  <p class="dte">28</p>
-                </div>
-                <div class="txt-cont-right">
-                  <h3>Event Name which can be long</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                    vivamus penatibus viverra aliquam diam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="./eventdetails/event-details.html">
-            <div class="event-card">
-              <div class="img-cont">
-                <img
-                  src="./images/event.png"
-                  alt="photo of an entertainer on stage, performing to an audience"
-                />
-              </div>
-              <div class="txt-cont">
-                <div class="txt-cont-left">
-                  <p class="mnth">Oct</p>
-                  <p class="dte">28</p>
-                </div>
-                <div class="txt-cont-right">
-                  <h3>Event Name which can be long</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                    vivamus penatibus viverra aliquam diam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="./eventdetails/event-details.html">
-            <div class="event-card">
-              <div class="img-cont">
-                <img
-                  src="./images/event.png"
-                  alt="photo of an entertainer on stage, performing to an audience"
-                />
-              </div>
-              <div class="txt-cont">
-                <div class="txt-cont-left">
-                  <p class="mnth">Oct</p>
-                  <p class="dte">28</p>
-                </div>
-                <div class="txt-cont-right">
-                  <h3>Event Name which can be long</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                    vivamus penatibus viverra aliquam diam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="./eventdetails/event-details.html">
-            <div class="event-card">
-              <div class="img-cont">
-                <img
-                  src="./images/event.png"
-                  alt="photo of an entertainer on stage, performing to an audience"
-                />
-              </div>
-              <div class="txt-cont">
-                <div class="txt-cont-left">
-                  <p class="mnth">Oct</p>
-                  <p class="dte">28</p>
-                </div>
-                <div class="txt-cont-right">
-                  <h3>Event Name which can be long</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                    vivamus penatibus viverra aliquam diam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="./eventdetails/event-details.html">
-            <div class="event-card">
-              <div class="img-cont">
-                <img
-                  src="./images/event.png"
-                  alt="photo of an entertainer on stage, performing to an audience"
-                />
-              </div>
-              <div class="txt-cont">
-                <div class="txt-cont-left">
-                  <p class="mnth">Oct</p>
-                  <p class="dte">28</p>
-                </div>
-                <div class="txt-cont-right">
-                  <h3>Event Name which can be long</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                    vivamus penatibus viverra aliquam diam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="./eventdetails/event-details.html">
-            <div class="event-card">
-              <div class="img-cont">
-                <img
-                  src="./images/event.png"
-                  alt="photo of an entertainer on stage, performing to an audience"
-                />
-              </div>
-              <div class="txt-cont">
-                <div class="txt-cont-left">
-                  <p class="mnth">Oct</p>
-                  <p class="dte">28</p>
-                </div>
-                <div class="txt-cont-right">
-                  <h3>Event Name which can be long</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                    vivamus penatibus viverra aliquam diam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <button>Load More Events</button>
+
+       <div class="events">
+         <a href="./eventdetails/event-details.html">
+           <div class="event-card">
+             <div class="img-cont">
+               <img
+                 src="./images/event.png"
+                 alt="photo of an entertainer on stage, performing to an audience"
+               />
+             </div>
+             <div class="txt-cont">
+               <div class="txt-cont-left">
+                 <p class="mnth">Oct</p>
+                 <p class="dte">28</p>
+               </div>
+               <div class="txt-cont-right">
+                 <h3>Event Name which can be long</h3>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                   vivamus penatibus viverra aliquam diam.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </a>
+         <a href="./eventdetails/event-details.html">
+           <div class="event-card">
+             <div class="img-cont">
+               <img
+                 src="./images/event.png"
+                 alt="photo of an entertainer on stage, performing to an audience"
+               />
+             </div>
+             <div class="txt-cont">
+               <div class="txt-cont-left">
+                 <p class="mnth">Oct</p>
+                 <p class="dte">28</p>
+               </div>
+               <div class="txt-cont-right">
+                 <h3>Event Name which can be long</h3>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                   vivamus penatibus viverra aliquam diam.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </a>
+         <a href="./eventdetails/event-details.html">
+           <div class="event-card">
+             <div class="img-cont">
+               <img
+                 src="./images/event.png"
+                 alt="photo of an entertainer on stage, performing to an audience"
+               />
+             </div>
+             <div class="txt-cont">
+               <div class="txt-cont-left">
+                 <p class="mnth">Oct</p>
+                 <p class="dte">28</p>
+               </div>
+               <div class="txt-cont-right">
+                 <h3>Event Name which can be long</h3>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                   vivamus penatibus viverra aliquam diam.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </a>
+         <a href="./eventdetails/event-details.html">
+           <div class="event-card">
+             <div class="img-cont">
+               <img
+                 src="./images/event.png"
+                 alt="photo of an entertainer on stage, performing to an audience"
+               />
+             </div>
+             <div class="txt-cont">
+               <div class="txt-cont-left">
+                 <p class="mnth">Oct</p>
+                 <p class="dte">28</p>
+               </div>
+               <div class="txt-cont-right">
+                 <h3>Event Name which can be long</h3>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                   vivamus penatibus viverra aliquam diam.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </a>
+         <a href="./eventdetails/event-details.html">
+           <div class="event-card">
+             <div class="img-cont">
+               <img
+                 src="./images/event.png"
+                 alt="photo of an entertainer on stage, performing to an audience"
+               />
+             </div>
+             <div class="txt-cont">
+               <div class="txt-cont-left">
+                 <p class="mnth">Oct</p>
+                 <p class="dte">28</p>
+               </div>
+               <div class="txt-cont-right">
+                 <h3>Event Name which can be long</h3>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                   vivamus penatibus viverra aliquam diam.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </a>
+         <a href="./eventdetails/event-details.html">
+           <div class="event-card">
+             <div class="img-cont">
+               <img
+                 src="./images/event.png"
+                 alt="photo of an entertainer on stage, performing to an audience"
+               />
+             </div>
+             <div class="txt-cont">
+               <div class="txt-cont-left">
+                 <p class="mnth">Oct</p>
+                 <p class="dte">28</p>
+               </div>
+               <div class="txt-cont-right">
+                 <h3>Event Name which can be long</h3>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                   vivamus penatibus viverra aliquam diam.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </a>
+         <a href="./eventdetails/event-details.html">
+           <div class="event-card">
+             <div class="img-cont">
+               <img
+                 src="./images/event.png"
+                 alt="photo of an entertainer on stage, performing to an audience"
+               />
+             </div>
+             <div class="txt-cont">
+               <div class="txt-cont-left">
+                 <p class="mnth">Oct</p>
+                 <p class="dte">28</p>
+               </div>
+               <div class="txt-cont-right">
+                 <h3>Event Name which can be long</h3>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                   vivamus penatibus viverra aliquam diam.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </a>
+         <a href="./eventdetails/event-details.html">
+           <div class="event-card">
+             <div class="img-cont">
+               <img
+                 src="./images/event.png"
+                 alt="photo of an entertainer on stage, performing to an audience"
+               />
+             </div>
+             <div class="txt-cont">
+               <div class="txt-cont-left">
+                 <p class="mnth">Oct</p>
+                 <p class="dte">28</p>
+               </div>
+               <div class="txt-cont-right">
+                 <h3>Event Name which can be long</h3>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                   vivamus penatibus viverra aliquam diam.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </a>
+         <a href="./eventdetails/event-details.html">
+           <div class="event-card">
+             <div class="img-cont">
+               <img
+                 src="./images/event.png"
+                 alt="photo of an entertainer on stage, performing to an audience"
+               />
+             </div>
+             <div class="txt-cont">
+               <div class="txt-cont-left">
+                 <p class="mnth">Oct</p>
+                 <p class="dte">28</p>
+               </div>
+               <div class="txt-cont-right">
+                 <h3>Event Name which can be long</h3>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                   vivamus penatibus viverra aliquam diam.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </a>
+       </div>
+       <button class="btn">Load More Events</button>
       </div>
+
+
 
       <!-- FOOTER -->
 
       <footer>
         <div class="footer-content">
-          <!-- Left contents for events, rights and social links -->
           <div class="footer-left">
             <h3>Events</h3>
             <div class="rights">
@@ -399,7 +394,6 @@
             </div>
           </div>
 
-          <!-- Right content about the company, important links and newsletter sign up -->
           <div class="footer-right">
             <div class="company">
               <h3>Company</h3>
@@ -421,7 +415,15 @@
             </div>
             <div class="news-ltr">
               <h3>Stay up to date</h3>
-              <input type="email" placeholder="Your email address" />
+                <form id="fm">
+                  <div class="news-fill">
+                    <input required name="email" type="email" placeholder="Your email address" />
+                    <button title="submit" type="submit"><svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7071 1.13131C21.9787 1.36899 22.0708 1.72182 21.9439 2.03908L14.9439 19.5391C14.8084 19.8777 14.4504 20.1097 14.0408 20.1243C13.6311 20.1389 13.2527 19.9332 13.0862 19.6054L9.2424 12.0379L0.593867 8.67461C0.219186 8.5289 -0.0158775 8.19783 0.000836285 7.83936C0.0175501 7.48089 0.282654 7.16767 0.669655 7.04915L20.6697 0.924148C21.0322 0.813106 21.4355 0.893623 21.7071 1.13131ZM11.1928 11.5688L13.8894 16.8778L18.6085 5.08L11.1928 11.5688ZM17.1943 3.84256L3.71108 7.9718L9.77854 10.3314L17.1943 3.84256Z" fill="#FF5722"/>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
             </div>
           </div>
         </div>
