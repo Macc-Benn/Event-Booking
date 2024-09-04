@@ -7,25 +7,31 @@ main {
     margin: 0 auto;
     max-width: 1440px;
     background: #F8F9FA;
+    overflow-x: hidden;
+    min-width: 350px;
 }
 
 /* NAV-BAR */
 
 .nav {
     width: 100%;
-    position: sticky;
+    max-width: 1440px;
+    position: fixed;
     top: 0;
     background-color: #FFFFFF;
     z-index: 9999;
+    box-shadow: 0 0 10px #cac4c4;
+    align-content: center;
 }
 
 .nav-bar {
+    margin: 0 auto;
+    width: 85%;
+    background-color: inherit;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
     display: flex;
     height: 90px;
-    box-shadow: 0 0 10px #cac4c4;
 }
 
 .nav-bar h4 a {
@@ -40,8 +46,7 @@ main {
 .nav-bar .right-pane {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 250px;
+    justify-content: center;
     height: 54px;
     gap: 56px;
     opacity: 0px;
@@ -68,14 +73,15 @@ main {
 }
 
 .right-pane p:hover {
+    cursor: pointer;
     border-color: #FF5722;
     opacity: 70%;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .right-pane .create-btn {
     display: flex;
-    padding: 16px 24px;
+    padding: 13px 21px;
     gap: 10px;
     border-radius: 4px;
     border: none;
@@ -85,12 +91,14 @@ main {
     text-align: left;
     color: #FFFFFF;
     background-color: #FF5722;
+    box-shadow: 0px 1px 4px 0px rgba(148, 138, 138, 0.75);
+    transition: all ease-in-out 250ms;
 }
 
 .right-pane .create-btn:hover {
     cursor: pointer;
-    transform: scale(101%);
-    transition: 0.3s;
+    transform: scale(105%);
+    box-shadow: 0px 0px 5px 2px rgba(148, 138, 138, 0.75);
 }
 
 #c-btn {
@@ -106,6 +114,7 @@ main {
 /* HERO SECTION */
 
 .hero {
+    margin-top: 90px;
     background-image: url(../images/event-hero.png);
     background-size: cover;
     height: 21.75rem;
@@ -116,9 +125,26 @@ main {
     display: flex;
 }
 
+/* @media screen and  (max-width: 552px) {
+    .hero-section {
+        margin-top: -150px !important;
+    }
+} */
+
+@media screen and  (max-width: 435px) {
+    .hero-section h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and  (max-width: 647px) {
+    .hero-section h1 {
+        font-size: 3rem !important;
+}
+}
 .hero-left {
     margin-top: 56px;
-    padding-left: 6.25em;
+    padding: 0 6.25em;
 }
 
 .hero-left .go-back a {
@@ -508,16 +534,18 @@ input {
 footer {
     background: #10375C;
     margin-top: 81px;
-    height: 100%;
+    padding: 81.8px 7.5%;
 }
 
 .footer-content {
     flex-wrap: wrap;
-    padding: 81.8px 10rem 81.8px 6.25rem;
+    height: fit-content;
     display: flex;
     color: #FFFFFF;
     justify-content: space-between;
     align-items: start;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .footer-content .rights {
@@ -540,9 +568,9 @@ footer {
 
 .footer-right {
     display: flex;
-    justify-content: center;
     color: #FFFFFF;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .footer-right .company,
@@ -570,17 +598,166 @@ footer {
     gap: 40px;
 }
 
-.news-ltr input {
-    padding: 5px 30px;
-    opacity: 50%;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    background-color: #FFFFFF;
+.news-fill input {
+  background: none;
+  border: none;
+  color: #667085;
+  padding: 5px 10px;
+  width: 90%;
 }
 
-.news-ltr ::placeholder {
+.news-fill ::placeholder {
     font-size: 16px;
-    color: #D9DBE1;
-    opacity: 100% !important;
+    color: #667085;
+}
+
+.news-fill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 5px 10px;
+    height: 40px;
+    gap:30px;
+    border: none;
+    border-radius: 8px;
+    background: #3f709e71;
+}
+
+.news-fill button {
+    background:none;
+    border: none;
+    transition: all ease-in-out 150ms;
+}
+
+.news-fill button:hover {
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+#extra {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 0;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background: #3f709e71;
+    margin: 0;
+    border: none;
+}
+
+.rgt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.rigt-dsp {
+    margin: 0 !important;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    p {
+        font-weight: 100;
+        margin: 0;
+    }
+}
+
+#extra .social-links {
+    margin: 0 !important;
+}
+/* Responsiveness */
+
+@media screen and (max-width: 679px) {
+    .footer-content, .footer-right  {
+        display: grid;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    #nav-btn, #extra, hr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .right-pane, 
+    .footer-left .rights, 
+    .footer-left .social-links, 
+    .info-links, 
+    .support-links {
+        display: none !important;
+    }
+
+    footer {
+        width: 100%;
+        padding: 24px 12px 24px 12px !important;
+    }
+
+    .footer-right {
+        gap: 0px;
+        width: 420px;
+
+        h3 {
+            font-weight: 200;
+        }
+
+        .news-ltr {
+            gap: 10px;
+        }
+    }
+}
+@media screen and (max-width: 445px) {
+    .footer-right {
+        width:410px ;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .footer-right {
+        width:405px ;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer-right {
+        width:390px ;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .footer-right {
+        width:370px ;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .footer-right {
+        width:360px ;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .footer-right {
+        width:340px ;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .footer-right {
+        width:330px ;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .footer-right {
+        width:325px ;
+    }
 }

@@ -8,8 +8,7 @@ main {
     max-width: 1440px;
     background: #F8F9FA;
     overflow-x: hidden;
-    min-width: 400px;
-  
+    min-width: 350px;
 }
 
 /* NAV-BAR */
@@ -33,7 +32,6 @@ main {
     justify-content: space-between;
     display: flex;
     height: 90px;
-
 }
 
 .nav-bar h4 a {
@@ -139,7 +137,6 @@ main {
 
 .hero-section h1 {
     margin-top: 0;
-    font-family: Inter;
     font-size: 58px;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -603,20 +600,20 @@ hr {
 }
 /* Responsiveness */
 
-@media(max-width: 679px) {
+@media screen and (max-width: 679px) {
     .footer-content, .footer-right  {
         display: grid;
         width: 400px;
     }
 }
 
-@media(min-width: 451px) {
+@media screen and (min-width: 451px) {
     #nav-btn, #extra, hr {
         display: none;
     }
 }
 
-@media(max-width: 450px) {
+@media screen and (max-width: 450px) {
     .right-pane, 
     .footer-left .rights, 
     .footer-left .social-links, 
@@ -631,7 +628,6 @@ hr {
     }
 
     .footer-right {
-        /* background-color: red; */
         gap: 0px;
         width: 420px;
 
@@ -644,37 +640,61 @@ hr {
         }
     }
 }
-@media(max-width: 445px) {
+@media screen and (max-width: 445px) {
     .footer-right {
         width:410px ;
     }
 }
 
-@media(max-width: 431px) {
+@media screen and (max-width: 431px) {
     .footer-right {
         width:405px ;
     }
 }
 
-@media(max-width: 425px) {
+@media screen and (max-width: 425px) {
     .footer-right {
         width:390px ;
     }
 }
 
-@media(max-width: 413px) {
+@media screen and (max-width: 413px) {
     .footer-right {
         width:370px ;
     }
 }
 
-@media(min-width: 450px) {
+@media screen and (max-width: 395px) {
+    .footer-right {
+        width:360px ;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .footer-right {
+        width:340px ;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .footer-right {
+        width:330px ;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .footer-right {
+        width:325px ;
+    }
+}
+
+@media screen and (min-width: 450px) {
     .upcoming {
         background-position: calc(100% - 10px) center;
     }
 }
 
-@media(max-width: 430px) {
+@media screen and (max-width: 430px) {
     .up-events {
         width: 350px;
         justify-content: left;
@@ -686,41 +706,42 @@ hr {
     }
 }
 
-@media (max-width: 582px) {
+@media screen and  (max-width: 582px) {
     .ev{
         margin-top: 32px !important;
     }
 }
 
-@media (max-width: 739px){
+@media screen and  (max-width: 739px){
     .up-events {
         justify-content: center;
     }
 
     .btn {
-        width: 350px !important;
+        width: 100%;
+        max-width: 335px !important;
         text-align: center !important;
     }
 }
 
-@media (max-width: 1134px) {
+@media screen and  (max-width: 1134px) {
     .what, .when, .loc {
         width: 250px;
     }
 }
 
-@media (max-width: 1020px) {
+@media screen and  (max-width: 1020px) {
     .what, .when, .loc {
         width: 220px;
     }
 }
-@media (max-width: 932px) {
+@media screen and  (max-width: 932px) {
     .what, .when, .loc {
         width: 200px;
     }
 }
 
-@media (max-width: 870px) {
+@media screen and  (max-width: 870px) {
     .foot {
         display: grid;
         gap: 0px;
@@ -754,13 +775,13 @@ hr {
         }
     }
 }
-@media (max-width: 552px) {
+@media screen and  (max-width: 552px) {
     .hero-section {
         margin-top: -150px !important;
     }
 }
 
-@media (max-width: 435px) {
+@media screen and  (max-width: 435px) {
     .hero-section h1 {
         font-size: 32px;
     }
