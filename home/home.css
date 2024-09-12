@@ -359,9 +359,13 @@ main {
        text-decoration: underline;
        text-decoration-thickness: 2px;
     }
+
+    img {
+        opacity: 80%;
+    }
 }
 
-.event-card a{
+.event-card a {
     align-items: center;
 }
 
@@ -376,7 +380,7 @@ main {
     height: fit-content;
     border-radius: 5px;
     box-shadow: 0 14px 11px #00322F0D;
-    transition: all ease-in-out 250ms;
+    transition: all ease-in-out 200ms;
 }
 
 .img-cont img {
@@ -427,7 +431,7 @@ main {
 
 .event-card:hover {
     box-shadow: 0 2px 11px #00322F0D;
-    transform: scale(105%);
+    transform: scale(103%);
 }
 
 
@@ -525,29 +529,43 @@ footer {
 }
 
 .news-fill input {
-  background: none;
+  background: #3f709e71;
   border: none;
   color: #667085;
   padding: 5px 10px;
-  width: 90%;
+  width: 100%;
+
+
+  outline: 2px solid #3f709e71;
+  padding: 10px;
+  border-radius: 4px;
+  transition: ouline-color 500ms;
+}
+.news-fill_input:is(:focus, :valid) {
+    outline-color: #FF5722;
 }
 
-.news-fill ::placeholder {
-    font-size: 16px;
-    color: #667085;
+.news-fill_label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 10px 6px;
+    color: #FFFFFF;
+    transition: translate 500ms, scale 500ms;
+}
+
+.news-fill_input:focus + .news-fill_label,
+.news-fill_input:valid + .news-fill_label {
+    padding-inline: 5px;
+    translate: 10px -14px;
+    scale: 0.9;
+ 
+    background-color: #10375C;
 }
 
 .news-fill {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    padding: 5px 10px;
-    height: 40px;
-    gap:30px;
-    border: none;
-    border-radius: 8px;
-    background: #3f709e71;
 }
 
 .news-fill button {
