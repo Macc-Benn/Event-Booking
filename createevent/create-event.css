@@ -161,6 +161,7 @@ main {
 .book-form-txt p {
     padding: 10px 24px;
     background: #00322F0D;
+    border: 1px solid #00322F0D;
     border-radius: 4px;
     color: #000000;
     font-size: 16px;
@@ -168,6 +169,11 @@ main {
     line-height: 21.86px;
     text-align: left;
     cursor: pointer;
+}
+
+.book-form-txt p:hover {
+    border-color: #10375C;
+    opacity: 80%;
 }
 
 .form-fill {
@@ -196,6 +202,7 @@ fieldset input {
     height: 40px;
     border: none;
     background: none;
+    outline: none;
 }
 
 ::placeholder {
@@ -247,6 +254,33 @@ fieldset input {
     padding: 10px;
     width: 13rem;
     height: 4.125rem;
+}
+
+.icons button {
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+
+}
+
+.icons button:hover {
+    cursor: pointer;
+    opacity: 70%;
+    border-color: #252D42;
+    background-color: rgb(201, 194, 194);
+}
+
+.icons input {
+    width: 30px;
+}
+
+.icons input[type=number]::-webkit-inner-spin-button,
+.icons input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.icons input[type=number] {
+    -moz-appearance: textfield;
 }
 
 .icons-txt {

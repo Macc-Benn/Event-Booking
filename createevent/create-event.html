@@ -93,37 +93,20 @@
                 <h3>Tickets</h3>
               </div>
               <div class="ticket-displ">
+                <!-- First Ticket Option -->
                 <div class="forline">
                   <div class="ticket-displ-top">
                     <div class="top-left">
                       <div class="icons">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <rect
-                            x="4"
-                            y="11"
-                            width="16"
-                            height="2"
-                            rx="1"
-                            fill="black"
-                          />
-                        </svg>
-                        <p>0</p>
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g id="Stockholm-icons / Navigation / Plus">
+                        <button onclick="decrement(1)" type="button">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
                             <rect
-                              id="Rectangle 185"
                               x="4"
                               y="11"
                               width="16"
@@ -131,65 +114,79 @@
                               rx="1"
                               fill="black"
                             />
-                            <rect
-                              id="Rectangle 185 Copy"
-                              x="13"
-                              y="4"
-                              width="16"
-                              height="2"
-                              rx="1"
-                              transform="rotate(90 13 4)"
-                              fill="black"
-                            />
-                          </g>
-                        </svg>
+                          </svg>
+                        </button>
+                        <input
+                          type="number"
+                          id="ticketValue1"
+                          placeholder="0"
+                          min="0"
+                          value="0"
+                          onkeydown="restrictInput(event)"
+                          oninput="updateFormInput(1)"
+                        />
+                        <button type="button" onclick="increment(1)">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g id="Stockholm-icons / Navigation / Plus">
+                              <rect
+                                id="Rectangle 185"
+                                x="4"
+                                y="11"
+                                width="16"
+                                height="2"
+                                rx="1"
+                                fill="black"
+                              />
+                              <rect
+                                id="Rectangle 185 Copy"
+                                x="13"
+                                y="4"
+                                width="16"
+                                height="2"
+                                rx="1"
+                                transform="rotate(90 13 4)"
+                                fill="black"
+                              />
+                            </g>
+                          </svg>
+                        </button>
                       </div>
                       <div class="icons-txt">
-                        <p>100 available</p>
+                        <p><span id="available1">100</span> available</p>
                       </div>
                     </div>
                     <div class="top-middle">
                       <p>
                         Table for 4 (Gold) VVIP “Eko All Night Pool Party
-                        Festival”
+                        Festival” N200,000 per table.
                       </p>
                     </div>
                     <div class="top-right">
-                      <p>N200,000</p>
+                      <p id="amount1">N0</p>
                     </div>
                   </div>
                 </div>
+
+                <!-- Second Ticket Option-->
                 <div class="forline">
                   <div class="ticket-displ-top">
                     <div class="top-left">
                       <div class="icons">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <rect
-                            x="4"
-                            y="11"
-                            width="16"
-                            height="2"
-                            rx="1"
-                            fill="black"
-                          />
-                        </svg>
-                        <p>0</p>
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g id="Stockholm-icons / Navigation / Plus">
+                        <button type="button" onclick="decrement(2)">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
                             <rect
-                              id="Rectangle 185"
                               x="4"
                               y="11"
                               width="16"
@@ -197,65 +194,79 @@
                               rx="1"
                               fill="black"
                             />
-                            <rect
-                              id="Rectangle 185 Copy"
-                              x="13"
-                              y="4"
-                              width="16"
-                              height="2"
-                              rx="1"
-                              transform="rotate(90 13 4)"
-                              fill="black"
-                            />
-                          </g>
-                        </svg>
+                          </svg>
+                        </button>
+                        <input
+                          type="number"
+                          id="ticketValue2"
+                          placeholder="0"
+                          min="0"
+                          value="0"
+                          onkeydown="restrictInput(event)"
+                          oninput="updateFormInput(2)"
+                        />
+                        <button type="button" onclick="increment(2)">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g id="Stockholm-icons / Navigation / Plus">
+                              <rect
+                                id="Rectangle 185"
+                                x="4"
+                                y="11"
+                                width="16"
+                                height="2"
+                                rx="1"
+                                fill="black"
+                              />
+                              <rect
+                                id="Rectangle 185 Copy"
+                                x="13"
+                                y="4"
+                                width="16"
+                                height="2"
+                                rx="1"
+                                transform="rotate(90 13 4)"
+                                fill="black"
+                              />
+                            </g>
+                          </svg>
+                        </button>
                       </div>
                       <div class="icons-txt">
-                        <p>85 available</p>
+                        <p><span id="available2">85</span> available</p>
                       </div>
                     </div>
                     <div class="top-middle">
                       <p>
                         Table for 4 (Gold) VVIP “Eko All Night Pool Party
-                        Festival”
+                        Festival” N150,000 per table
                       </p>
                     </div>
                     <div class="top-right">
-                      <p>N150,000</p>
+                      <p id="amount2">N0</p>
                     </div>
                   </div>
                 </div>
+
+                <!-- Third Ticket Option -->
                 <div class="forline">
                   <div class="ticket-displ-top">
                     <div class="top-left">
                       <div class="icons">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <rect
-                            x="4"
-                            y="11"
-                            width="16"
-                            height="2"
-                            rx="1"
-                            fill="black"
-                          />
-                        </svg>
-                        <p>0</p>
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g id="Stockholm-icons / Navigation / Plus">
+                        <button type="button" onclick="decrement(3)">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
                             <rect
-                              id="Rectangle 185"
                               x="4"
                               y="11"
                               width="16"
@@ -263,28 +274,66 @@
                               rx="1"
                               fill="black"
                             />
-                            <rect
-                              id="Rectangle 185 Copy"
-                              x="13"
-                              y="4"
-                              width="16"
-                              height="2"
-                              rx="1"
-                              transform="rotate(90 13 4)"
-                              fill="black"
-                            />
-                          </g>
-                        </svg>
+                          </svg>
+                        </button>
+                        <input
+                          type="number"
+                          class="ticket-input"
+                          id="ticketValue3"
+                          placeholder="0"
+                          min="0"
+                          value="0"
+                          onkeydown="restrictInput(event)"
+                          oninput="updateFromInput(3)"
+                        />
+                        <button
+                          type="button"
+                          onclick="increment(this)"
+                          data-id="3"
+                        >
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g id="Stockholm-icons / Navigation / Plus">
+                              <rect
+                                id="Rectangle 185"
+                                x="4"
+                                y="11"
+                                width="16"
+                                height="2"
+                                rx="1"
+                                fill="black"
+                              />
+                              <rect
+                                id="Rectangle 185 Copy"
+                                x="13"
+                                y="4"
+                                width="16"
+                                height="2"
+                                rx="1"
+                                transform="rotate(90 13 4)"
+                                fill="black"
+                              />
+                            </g>
+                          </svg>
+                        </button>
                       </div>
                       <div class="icons-txt">
-                        <p>150 available</p>
+                        <p><span id="available3">150</span> available</p>
                       </div>
                     </div>
                     <div class="top-middle">
-                      <p>For 4 Regular “Eko All Night Pool Party Festival”</p>
+                      <p>
+                        For 4 Regular “Eko All Night Pool Party Festival” N5,000
+                        per table
+                      </p>
                     </div>
                     <div class="top-right">
-                      <p>N5,000</p>
+                      <p id="amount3">N0</p>
                     </div>
                   </div>
                 </div>
@@ -401,5 +450,6 @@
         </div>
       </footer>
     </main>
+    <script src="create-event.js" rel="script"></script>
   </body>
 </html>
